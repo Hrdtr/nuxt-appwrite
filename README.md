@@ -117,6 +117,10 @@ export default {
 }
 ```
 
+#### Note:
+
+- `$appwrite` in server side (asyncData, nuxtServerInit), cannot handle auth for now, which mean, the server renderer only can fetch data with wildcard permissions
+
 ## Development
 
 1. Clone this repository
