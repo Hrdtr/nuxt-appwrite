@@ -1,3 +1,5 @@
+[![nuxt-appwrite](https://github.com/Hrdtr/nuxt-appwrite/raw/master/docs/static/preview-bg-white.png)](#nuxt-appwrite)
+
 # nuxt-appwrite
 
 [![npm version][npm-version-src]][npm-version-href]
