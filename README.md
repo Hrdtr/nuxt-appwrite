@@ -102,7 +102,7 @@ export default {
   ...
   async asyncData({ $appwrite }) {
     try {
-      const res = await $appwrite.locale.getDocument(
+      const res = await $appwrite.database.getDocument(
         collectionID,
         documentID
       )
