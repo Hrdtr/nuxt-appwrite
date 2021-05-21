@@ -1,4 +1,4 @@
-const Appwrite = require('appwrite')
+const { Appwrite } = require('appwrite')
 
 const sdk = (endpoint, project) => {
   return new Appwrite()
