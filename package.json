@@ -1,0 +1,45 @@
+{
+  "name": "nuxt-appwrite",
+  "version": "0.2.0",
+  "description": "Easily connect Appwrite to Nuxt",
+  "repository": "Hrdtr/nuxt-appwrite",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Herdi Tr. <hrdtr@cognitive.id>"
+    }
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/module.js",
+  "scripts": {
+    "dev": "nuxt example",
+    "lint": "eslint --ext .js,.vue .",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "test": "yarn lint && jest"
+  },
+  "dependencies": {
+    "appwrite": "^3.1.0",
+    "cookie-universal": "^2.1.4",
+    "defu": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@nuxt/test-utils": "^0.2.2",
+    "@nuxtjs/eslint-config": "latest",
+    "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "eslint": "latest",
+    "husky": "latest",
+    "jest": "latest",
+    "nuxt-edge": "latest",
+    "standard-version": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
