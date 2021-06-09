@@ -146,11 +146,10 @@ Don't forget to remove the JWT after the user logs out
   this.$appwrite
     .account.deleteSessions('current')
     .then(() => {
-      this.$appwrite.utils.setJWT()
+      this.$appwrite.utils.removeJWT()
     }, function (error) {
       console.log(error);
     });
-  this.$appwrite.utils.removeJWT()
   ```
 
 ## Development
