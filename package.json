@@ -1,6 +1,6 @@
 {
   "name": "nuxt-appwrite",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Easily connect Appwrite to Nuxt",
   "repository": "Hrdtr/nuxt-appwrite",
   "license": "MIT",
