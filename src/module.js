@@ -16,16 +16,16 @@ module.exports = function (moduleOptions) {
   nuxt.options.publicRuntimeConfig.appwrite.project = options.project
 
   this.addTemplate({
-    src: join(__dirname, 'sdk', 'web.js'),
-    fileName: 'appwrite/sdk/web.js'
+    src: join(__dirname, 'runtime', 'sdk.js'),
+    fileName: 'appwrite/sdk.js'
   })
   this.addTemplate({
-    src: join(__dirname, 'utils.js'),
+    src: join(__dirname, 'runtime', 'utils.js'),
     fileName: 'appwrite/utils.js'
   })
 
   this.addPlugin({
-    src: resolve(__dirname, 'plugin.js'),
+    src: resolve(__dirname, 'runtime', 'plugin.js'),
     fileName: 'appwrite/plugin.js',
     options
   })

@@ -1,4 +1,4 @@
-const { Appwrite } = require('appwrite')
+import { Appwrite } from 'appwrite'
 
 export default (endpoint, project, jwt) => {
   return new Appwrite()

@@ -10,9 +10,9 @@
     }
   ],
   "files": [
-    "lib"
+    "src"
   ],
-  "main": "lib/module.js",
+  "main": "src/module.js",
   "scripts": {
     "dev": "nuxt example",
     "lint": "eslint --ext .js,.vue .",

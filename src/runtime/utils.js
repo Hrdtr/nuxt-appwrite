@@ -1,4 +1,6 @@
-const cookies = require('cookie-universal')()
+import Cookie from 'cookie-universal'
+
+const cookies = Cookie()
 
 export const setJWT = (token) => {
   if (token) {
