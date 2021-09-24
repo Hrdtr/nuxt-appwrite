@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/Hrdtr/nuxt-appwrite/compare/v0.2.3...v0.3.0) (2021-09-24)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/setup-node from 2.3.0 to 2.3.2 ([255afad](https://github.com/Hrdtr/nuxt-appwrite/commit/255afad7cad71c29c015bebb871baa2b3cd70ce8))
+* **deps:** bump actions/setup-node from 2.3.2 to 2.4.0 ([df14212](https://github.com/Hrdtr/nuxt-appwrite/commit/df142123d9d2350a4c9fc30a73768b26bfcd8fe3))
+* **deps:** bump appwrite from 3.2.0 to 4.0.2 ([6b0c0fe](https://github.com/Hrdtr/nuxt-appwrite/commit/6b0c0fe445c298a4d438d4222749de45ea5cd2f3))
+* **deps:** bump codecov/codecov-action from 2.0.2 to 2.0.3 ([e68c611](https://github.com/Hrdtr/nuxt-appwrite/commit/e68c611ed0e65aaf8fa39c10d939b9f23f1548c3))
+* **deps:** bump codecov/codecov-action from 2.0.3 to 2.1.0 ([c13bb48](https://github.com/Hrdtr/nuxt-appwrite/commit/c13bb482ea781bb35410f8f6a37fceb1310972d0))
+
 ### [0.2.3](https://github.com/Hrdtr/nuxt-appwrite/compare/v0.2.2...v0.2.3) (2021-07-29)
 
 
