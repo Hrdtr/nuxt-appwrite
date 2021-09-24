@@ -2590,13 +2590,13 @@ anymatch@^3.0.0, anymatch@^3.0.3, anymatch@~3.1.1, anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-appwrite@^3.1.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/appwrite/-/appwrite-3.2.0.tgz#b7e542045e298c808d10c2c98b8daed98b37875e"
-  integrity sha512-9zPPa0mnhqBfbrZfztOFEpJ1PkIlMciUXLCITITRQFP8HqpFE2WTP76JeecHdnIb931cnvxW3TVnqSHrGtfnnA==
+appwrite@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/appwrite/-/appwrite-4.0.2.tgz#33cfa6606371c3e992c5261d8ba623094ef0ba81"
+  integrity sha512-DHnkyXTlhQh/x2xIuVlDGlUoxM9IAJsFmu05q8fcooDQRgSUc5m2jDDBlz6rq6oE6mb4PT9BcCZ9CvNNeuZzqw==
   dependencies:
-    cross-fetch "^3.1.4"
-    isomorphic-form-data "^2.0.0"
+    cross-fetch "3.1.4"
+    isomorphic-form-data "2.0.0"
 
 aproba@^1.1.1:
   version "1.2.0"
@@ -3969,7 +3969,7 @@ create-require@^1.1.1:
   resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
   integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
 
-cross-fetch@^3.1.4:
+cross-fetch@3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.4.tgz#9723f3a3a247bf8b89039f3a380a9244e8fa2f39"
   integrity sha512-1eAtFWdIubi6T4XPy6ei9iUFoKpUkIF971QLN8lIvvvwueI65+Nw5haMNKUwfJxabqlIIDODJKGrQ66gxC0PbQ==
@@ -6442,7 +6442,7 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
-isomorphic-form-data@^2.0.0:
+isomorphic-form-data@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/isomorphic-form-data/-/isomorphic-form-data-2.0.0.tgz#9f6adf1c4c61ae3aefd8f110ab60fb9b143d6cec"
   integrity sha512-TYgVnXWeESVmQSg4GLVbalmQ+B4NPi/H4eWxqALKj63KsUrcu301YDjBqaOw3h+cbak7Na4Xyps3BiptHtxTfg==
