@@ -2622,9 +2622,9 @@ anymatch@^3.0.0, anymatch@^3.0.3, anymatch@~3.1.1, anymatch@~3.1.2:
     picomatch "^2.0.4"
 
 appwrite@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/appwrite/-/appwrite-4.0.2.tgz#33cfa6606371c3e992c5261d8ba623094ef0ba81"
-  integrity sha512-DHnkyXTlhQh/x2xIuVlDGlUoxM9IAJsFmu05q8fcooDQRgSUc5m2jDDBlz6rq6oE6mb4PT9BcCZ9CvNNeuZzqw==
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/appwrite/-/appwrite-4.0.3.tgz#c7bcef2eb67a01f2f7c2f037617fb6e9afd6aa43"
+  integrity sha512-S4CjjSl2ixLpw/l9dQx7O5HQoSauKjhlIhni7oLzSrPvs9j8CPM5ItvHdxAXL2iiR+mIq0MQFFx7oJzgNyTXpg==
   dependencies:
     cross-fetch "3.1.4"
     isomorphic-form-data "2.0.0"
