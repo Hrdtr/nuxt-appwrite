@@ -20,7 +20,7 @@
     "test": "yarn lint && jest"
   },
   "dependencies": {
-    "appwrite": "^4.0.2",
+    "appwrite": "^5.0.0",
     "cookie-universal": "^2.1.4",
     "defu": "^5.0.0"
   },
