@@ -2620,10 +2620,10 @@ anymatch@^3.0.0, anymatch@^3.0.3, anymatch@~3.1.1, anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-appwrite@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/appwrite/-/appwrite-5.0.0.tgz#e1eaffd8494068028a7106fc185bbe1f031f28f0"
-  integrity sha512-gS2LXzzp+1nhxyfFe/cY2+suPXJNyU+RS4No/l7CVWF3SudyvvlhZD9SlGi+Qdr08yLdnsRt5W5xs9uoddgkag==
+appwrite@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/appwrite/-/appwrite-6.0.0.tgz#7078d1ccfd7adbfd426e8146a0b9d2eea905c11a"
+  integrity sha512-43a2obJ5ADe3lJxvX05Q90iP+SG0+DohtGCnDz6A6w6WQc67hNO3Ep+56ZvSIkOqGK2NyvtoXTLCVoBMnQhvcw==
   dependencies:
     cross-fetch "3.1.4"
     isomorphic-form-data "2.0.0"
