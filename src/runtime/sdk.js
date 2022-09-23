@@ -1,23 +1,22 @@
-import Appwrite from 'appwrite'
+import {Client, Account, Avatars, Query, Databases, Functions, Locale, Storage, Teams, Permission, Role, ID} from 'appwrite'
 
 export default (endpoint, project, jwt) => {
-  const client  = new Appwrite.Client()
+  const client  = new Client()
                         .setEndpoint(endpoint)
                         .setProject(project)
                         .setJWT(jwt)
   return {
-    appwrite: Appwrite,
     client: client,
-    account: new Appwrite.Account(client),
-    query: Appwrite.Query,
-    avatars: new Appwrite.Avatars(client),
-    database: new Appwrite.Databases(client),
-    functions: new Appwrite.Functions(client),
-    locale: new Appwrite.Locale(client),
-    storage: new Appwrite.Storage(client),
-    teams: new Appwrite.Teams(client),
-    permission: Appwrite.Permission,
-    role: Appwrite.Role,
-    ID: Appwrite.ID,
+    account: new Account(client),
+    query: Query,
+    avatars: new Avatars(client),
+    database: new Databases(client),
+    functions: new Functions(client),
+    locale: new Locale(client),
+    storage: new Storage(client),
+    teams: new Teams(client),
+    permission: Permission,
+    role: Role,
+    ID: ID,
   }
 }
