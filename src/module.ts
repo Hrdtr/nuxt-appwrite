@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, addImportsDir, createResolver } from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, addImportsDir, createResolver, extendViteConfig } from '@nuxt/kit'
 
 export interface ModuleOptions {
   endpoint: string,
@@ -20,8 +20,16 @@ export default defineNuxtModule<ModuleOptions>({
     if (!options.project) throw new Error('`appwrite.project` is required')
     nuxt.options.runtimeConfig.public.appwrite = options
 
+    // Fix esm error with cross-fetch used by appwrite js sdk
+    extendViteConfig((config) => {
+      config.optimizeDeps = config.optimizeDeps || {}
+      config.optimizeDeps.include = config.optimizeDeps.include || []
+      config.optimizeDeps.include.push('cross-fetch')
+    })
+
     addPlugin(resolve('./runtime/plugin'))
     addImportsDir(resolve('./runtime/composables'))
+
     nuxt.hook('listen', () => {
       console.info(`Appwrite Endpoint: ${options.endpoint}`)
       console.info(`Appwrite Project: ${options.project}`)
