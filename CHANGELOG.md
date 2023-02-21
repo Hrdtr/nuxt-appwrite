@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v1.0.2
+
+
+### 🩹 Fixes
+
+  - Composables types (50492d8)
+
+### ❤️  Contributors
+
+- Herdi Tr <hrdtr@cognitive.id>
+
 ## v1.0.1
 
 
