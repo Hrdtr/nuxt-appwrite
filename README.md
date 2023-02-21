@@ -22,7 +22,7 @@ First, add `nuxt-appwrite` dependency to your project
   yarn add nuxt-appwrite # or npm install nuxt-appwrite
   ```
 
-Next, add `nuxt-appwrite` to the `modules` section of `nuxt.config.js`
+Next, add `nuxt-appwrite` to the `modules` section of `nuxt.config`
 
   ```js
   export default {
