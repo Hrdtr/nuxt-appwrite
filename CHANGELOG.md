@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v1.0.3
+
+
+### 🩹 Fixes
+
+  - **docs:** Nuxt config filename (cf291c2)
+  - Esm error with cross-fetch used by appwrite js sdk (a5a3040)
+
+### ❤️  Contributors
+
+- Herdi Tr <hrdtr@cognitive.id>
+
 ## v1.0.2
 
 
