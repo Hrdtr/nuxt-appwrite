@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v1.0.1
+
+
+### 🏡 Chore
+
+  - **release:** V1.0.1 (502fcc1)
+
+### ❤️  Contributors
+
+- Herdi Tr <hrdtr@cognitive.id>
+
 ## [0.3.0](https://github.com/Hrdtr/nuxt-appwrite/compare/v0.2.3...v0.3.0) (2021-09-24)
 
 
