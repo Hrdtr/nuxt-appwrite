@@ -19,7 +19,7 @@ import { ModuleOptions } from "../module";
 
 export type AppwriteConfig = {
   endpoint: string;
-  projectId: string;
+  project: string;
 };
 
 export type Appwrite = {
@@ -46,11 +46,11 @@ export default defineNuxtPlugin((nuxtApp) => {
   const moduleOptions = nuxtApp.$config.public.appwrite as ModuleOptions;
   const config: AppwriteConfig = {
     endpoint: moduleOptions.endpoint || "https://cloud.appwrite.io/v1",
-    projectId: moduleOptions.projectId,
+    project: moduleOptions.project,
   };
   const client = new Client();
   client.setEndpoint(config.endpoint);
-  client.setProject(config.projectId);
+  client.setProject(config.project);
 
   return {
     provide: {

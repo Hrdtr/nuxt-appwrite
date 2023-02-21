@@ -2,7 +2,7 @@ import { defineNuxtModule, addPlugin, addImportsDir, createResolver } from '@nux
 
 export interface ModuleOptions {
   endpoint: string,
-  projectId: string
+  project: string
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -12,16 +12,19 @@ export default defineNuxtModule<ModuleOptions>({
   },
   defaults: {
     endpoint: 'https://cloud.appwrite.io/v1',
-    projectId: ''
+    project: ''
   },
   setup (options, nuxt) {
     const { resolve } = createResolver(import.meta.url)
 
-    if (!options.projectId) throw new Error('`appwrite.projectId` is required')
+    if (!options.project) throw new Error('`appwrite.project` is required')
     nuxt.options.runtimeConfig.public.appwrite = options
 
     addPlugin(resolve('./runtime/plugin'))
     addImportsDir(resolve('./runtime/composables'))
-    console.log('added')
+    nuxt.hook('listen', () => {
+      console.info(`Appwrite Endpoint: ${options.endpoint}`)
+      console.info(`Appwrite Project: ${options.project}`)
+    })
   }
 })

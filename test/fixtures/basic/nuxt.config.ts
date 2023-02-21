@@ -1,7 +1,9 @@
-import MyModule from '../../../src/module'
+import nuxtAppwrite, { ModuleOptions } from '../../../src/module'
+import { NuxtModule } from '@nuxt/schema'
 
 export default defineNuxtConfig({
-  modules: [
-    MyModule
-  ]
+  modules: [ nuxtAppwrite as NuxtModule<Partial<ModuleOptions>> ],
+  appwrite: {
+    project: 'nuxt-playground'
+  }
 })
