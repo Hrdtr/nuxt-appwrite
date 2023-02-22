@@ -92,3 +92,19 @@ Currently Not Supported
 [MIT License](./LICENSE)
 
 Copyright (c) Herdi Tr. <iam@hrdtr.xyz>
+
+<!-- Badges -->
+[npm-version-src]: https://img.shields.io/npm/v/nuxt-appwrite/latest.svg
+[npm-version-href]: https://npmjs.com/package/nuxt-appwrite
+
+[npm-downloads-src]: https://img.shields.io/npm/dt/nuxt-appwrite.svg
+[npm-downloads-href]: https://npmjs.com/package/nuxt-appwrite
+
+[github-actions-ci-src]: https://github.com/Hrdtr/nuxt-appwrite/workflows/ci/badge.svg
+[github-actions-ci-href]: https://github.com/Hrdtr/nuxt-appwrite/actions?query=workflow%3Aci
+
+[codecov-src]: https://img.shields.io/codecov/c/github/Hrdtr/nuxt-appwrite.svg
+[codecov-href]: https://codecov.io/gh/Hrdtr/nuxt-appwrite
+
+[license-src]: https://img.shields.io/npm/l/nuxt-appwrite.svg
+[license-href]: https://npmjs.com/package/nuxt-appwrite
