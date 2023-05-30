@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v1.0.4
+
+[compare changes](https://undefined/undefined/compare/v1.0.3...v1.0.4)
+
+
+### 🩹 Fixes
+
+  - **docs:** Readme badges (1a75b09)
+
+### 🏡 Chore
+
+  - Lint using @nuxtjs/eslint-config-typescript (26ece1c)
+
+### ❤️  Contributors
+
+- Herdi Tr <hrdtr@cognitive.id>
+
 ## v1.0.3
 
 
