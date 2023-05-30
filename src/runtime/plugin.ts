@@ -1,4 +1,4 @@
-import { defineNuxtPlugin } from "#app";
+import { defineNuxtPlugin } from '#app'
 import {
   Client,
   Account,
@@ -13,9 +13,9 @@ import {
   Query,
   Role,
   Storage,
-  Teams,
-} from "appwrite";
-import { ModuleOptions } from "../module";
+  Teams
+} from 'appwrite'
+import { ModuleOptions } from '../module'
 
 export type AppwriteConfig = {
   endpoint: string;
@@ -43,14 +43,14 @@ export type Appwrite = {
 };
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const moduleOptions = nuxtApp.$config.public.appwrite as ModuleOptions;
+  const moduleOptions = nuxtApp.$config.public.appwrite as ModuleOptions
   const config: AppwriteConfig = {
-    endpoint: moduleOptions.endpoint || "https://cloud.appwrite.io/v1",
-    project: moduleOptions.project,
-  };
-  const client = new Client();
-  client.setEndpoint(config.endpoint);
-  client.setProject(config.project);
+    endpoint: moduleOptions.endpoint || 'https://cloud.appwrite.io/v1',
+    project: moduleOptions.project
+  }
+  const client = new Client()
+  client.setEndpoint(config.endpoint)
+  client.setProject(config.project)
 
   return {
     provide: {
@@ -71,18 +71,18 @@ export default defineNuxtPlugin((nuxtApp) => {
         Query,
         Role,
         AppwriteException,
-        ID,
-      },
-    },
-  };
-});
+        ID
+      }
+    }
+  }
+})
 
-declare module "#app" {
+declare module '#app' {
   interface NuxtApp {
     $appwrite: Appwrite;
   }
 }
-declare module "@vue/runtime-core" {
+declare module '@vue/runtime-core' {
   interface ComponentCustomProperties {
     $appwrite: Appwrite;
   }
