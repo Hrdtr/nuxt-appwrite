@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v1.0.5
+
+[compare changes](https://github.com/Hrdtr/nuxt-appwrite/compare/v1.0.3...v1.0.5)
+
+### 🩹 Fixes
+
+- **docs:** Readme badges ([1a75b09](https://github.com/Hrdtr/nuxt-appwrite/commit/1a75b09))
+
+### 🏡 Chore
+
+- Lint using @nuxtjs/eslint-config-typescript ([26ece1c](https://github.com/Hrdtr/nuxt-appwrite/commit/26ece1c))
+- **release:** V1.0.4 ([c878d9b](https://github.com/Hrdtr/nuxt-appwrite/commit/c878d9b))
+
+### ❤️ Contributors
+
+- Herdi Tr <hrdtr@cognitive.id>
+
 ## v1.0.4
 
 [compare changes](https://undefined/undefined/compare/v1.0.3...v1.0.4)
