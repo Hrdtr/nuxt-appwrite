@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v1.0.6
+
+[compare changes](https://github.com/Hrdtr/nuxt-appwrite/compare/v1.0.5...v1.0.6)
+
+### 🏡 Chore
+
+- Update deps ([45a5553](https://github.com/Hrdtr/nuxt-appwrite/commit/45a5553))
+
+### ❤️ Contributors
+
+- Herdi Tr <herditriyansah@gmail.com>
+
 ## v1.0.5
 
 [compare changes](https://github.com/Hrdtr/nuxt-appwrite/compare/v1.0.3...v1.0.5)
