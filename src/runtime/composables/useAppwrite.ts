@@ -1,5 +1,5 @@
 import { Appwrite } from '../plugin'
-import { useNuxtApp } from '#app'
+import { useNuxtApp } from '#imports'
 
 export const useAppwrite = () => {
   const { $appwrite } = useNuxtApp()
