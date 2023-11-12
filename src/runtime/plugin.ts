@@ -15,7 +15,7 @@ import {
   Teams
 } from 'appwrite'
 import { ModuleOptions } from '../module'
-import { defineNuxtPlugin } from '#app'
+import { defineNuxtPlugin } from '#imports'
 
 export type AppwriteConfig = {
   endpoint: string;
