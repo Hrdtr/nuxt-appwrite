@@ -1,4 +1,5 @@
 [![nuxt-appwrite](https://github.com/Hrdtr/nuxt-appwrite/raw/main/docs/static/cover.jpg)](#nuxt-appwrite)
+*Cover Image by [@Atinux](https://github.com/Atinux)*
 
 # nuxt-appwrite
 
