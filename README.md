@@ -1,4 +1,4 @@
-[![nuxt-appwrite](https://github.com/Hrdtr/nuxt-appwrite/raw/main/docs/static/preview-bg-white.png)](#nuxt-appwrite)
+[![nuxt-appwrite](https://github.com/Hrdtr/nuxt-appwrite/raw/main/docs/static/cover.jpg)](#nuxt-appwrite)
 
 # nuxt-appwrite
 
