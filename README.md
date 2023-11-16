@@ -92,7 +92,7 @@ Currently Not Supported
 
 [MIT License](./LICENSE)
 
-Copyright (c) Herdi Tr. <iam@hrdtr.xyz>
+Copyright (c) Herdi Tr. <iam@icm.hrdtr.dev>
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-appwrite/latest.svg
