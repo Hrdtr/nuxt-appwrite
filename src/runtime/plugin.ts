@@ -1,4 +1,3 @@
-import type{ ModuleOptions } from '../module'
 import {
   Client,
   Account,
@@ -13,8 +12,9 @@ import {
   Query,
   Role,
   Storage,
-  Teams,
+  Teams
 } from 'appwrite'
+import type{ ModuleOptions } from '../module'
 import { defineNuxtPlugin } from '#imports'
 
 export type AppwriteConfig = {
