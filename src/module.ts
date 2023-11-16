@@ -1,4 +1,12 @@
 import { defineNuxtModule, addPlugin, addImportsDir, createResolver, extendViteConfig } from '@nuxt/kit'
+export type {
+  Models,
+  Payload,
+  QueryTypes,
+  QueryTypesList,
+  RealtimeResponseEvent,
+  UploadProgress
+} from 'appwrite'
 
 export interface ModuleOptions {
   endpoint: string,
