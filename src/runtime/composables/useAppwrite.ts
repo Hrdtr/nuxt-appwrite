@@ -1,4 +1,4 @@
-import { Appwrite } from '../plugin'
+import type { Appwrite } from '../plugin'
 import { useNuxtApp } from '#imports'
 
 export const useAppwrite = () => {
