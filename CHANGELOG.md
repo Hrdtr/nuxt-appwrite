@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v1.0.7
+
+[compare changes](https://github.com/Hrdtr/nuxt-appwrite/compare/v1.0.6...v1.0.7)
+
+### 🩹 Fixes
+
+- Import nuxt composables from #imports ([e53e7b3](https://github.com/Hrdtr/nuxt-appwrite/commit/e53e7b3))
+- Re-export types from appwrite ([83fff7b](https://github.com/Hrdtr/nuxt-appwrite/commit/83fff7b))
+
+### 🏡 Chore
+
+- Deps update ([52b8a08](https://github.com/Hrdtr/nuxt-appwrite/commit/52b8a08))
+- Assets update ([aca081d](https://github.com/Hrdtr/nuxt-appwrite/commit/aca081d))
+- Lint fix ([9b5baef](https://github.com/Hrdtr/nuxt-appwrite/commit/9b5baef))
+
+### ❤️ Contributors
+
+- Herdi Tr <herditriyansah@gmail.com>
+- Daniel Roe ([@danielroe](http://github.com/danielroe))
+
 ## v1.0.6
 
 [compare changes](https://github.com/Hrdtr/nuxt-appwrite/compare/v1.0.5...v1.0.6)
