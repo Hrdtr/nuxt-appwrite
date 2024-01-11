@@ -37,7 +37,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install && pnpm dev:prepare
 
       - name: Test
         run: pnpm typecheck
@@ -74,7 +74,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install && pnpm dev:prepare
 
       - name: Lint
         run: pnpm lint
@@ -111,7 +111,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install && pnpm dev:prepare
 
       - name: Test
         run: pnpm test
