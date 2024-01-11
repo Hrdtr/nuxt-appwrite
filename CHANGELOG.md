@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v1.0.8
+
+[compare changes](https://github.com/Hrdtr/nuxt-appwrite/compare/v1.0.7...v1.0.8)
+
+### 📖 Documentation
+
+- Add credit to readme cover image ([c41e5e8](https://github.com/Hrdtr/nuxt-appwrite/commit/c41e5e8))
+- Change the email inside readme ([754fd8a](https://github.com/Hrdtr/nuxt-appwrite/commit/754fd8a))
+
+### 🏡 Chore
+
+- Test bundler module resolution ([94b6d6d](https://github.com/Hrdtr/nuxt-appwrite/commit/94b6d6d))
+- Add ci workflow ([280a034](https://github.com/Hrdtr/nuxt-appwrite/commit/280a034))
+- Add issue & pr template ([57855e2](https://github.com/Hrdtr/nuxt-appwrite/commit/57855e2))
+- Deps update ([d4089b4](https://github.com/Hrdtr/nuxt-appwrite/commit/d4089b4))
+
+### ❤️ Contributors
+
+- Herdi Tr <iam@icm.hrdtr.dev>
+- Daniel Roe <daniel@roe.dev>
+
 ## v1.0.7
 
 [compare changes](https://github.com/Hrdtr/nuxt-appwrite/compare/v1.0.6...v1.0.7)
