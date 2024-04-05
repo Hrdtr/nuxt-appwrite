@@ -20,7 +20,7 @@ Appwrite is a self-hosted solution that provides developers with a set of easy-t
 First, add `nuxt-appwrite` dependency to your project
 
   ```bash
-  yarn add nuxt-appwrite # or npm install nuxt-appwrite
+  npx nuxi@latest module add appwrite
   ```
 
 Next, add `nuxt-appwrite` to the `modules` section of `nuxt.config`
