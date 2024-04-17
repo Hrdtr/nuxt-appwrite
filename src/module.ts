@@ -1,16 +1,12 @@
+import type { CookieSerializeOptions } from 'cookie-es'
 import { defineNuxtModule, addPlugin, addImportsDir, createResolver, extendViteConfig } from '@nuxt/kit'
-export type {
-  Models,
-  Payload,
-  QueryTypes,
-  QueryTypesList,
-  RealtimeResponseEvent,
-  UploadProgress
-} from 'appwrite'
+
+export { useServerSideAppwrite } from './runtime/server'
 
 export interface ModuleOptions {
   endpoint: string,
-  project: string
+  project: string,
+  cookieSerializeOptions?: Omit<CookieSerializeOptions, 'expires'>
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -20,13 +16,23 @@ export default defineNuxtModule<ModuleOptions>({
   },
   defaults: {
     endpoint: 'https://cloud.appwrite.io/v1',
-    project: ''
+    project: '',
+    cookieSerializeOptions: {
+      path: '/',
+      httpOnly: true,
+      secure: true,
+      sameSite: 'strict'
+    }
   },
   setup (options, nuxt) {
     const { resolve } = createResolver(import.meta.url)
 
     if (!options.project) throw new Error('`appwrite.project` is required')
-    nuxt.options.runtimeConfig.public.appwrite = options
+    nuxt.options.runtimeConfig.public.appwrite = {
+      endpoint: options.endpoint,
+      project: options.project,
+      cookieSerializeOptions: options.cookieSerializeOptions
+    }
 
     // Fix esm error with cross-fetch used by appwrite js sdk
     extendViteConfig((config) => {
@@ -44,3 +50,18 @@ export default defineNuxtModule<ModuleOptions>({
     })
   }
 })
+
+declare module 'nuxt/schema' {
+  interface RuntimeConfig {
+    appwrite: {
+      apiKey?: string,
+    }
+  }
+  interface PublicRuntimeConfig {
+    appwrite: {
+      endpoint: string,
+      project: string,
+      cookieSerializeOptions?: CookieSerializeOptions
+    }
+  }
+}

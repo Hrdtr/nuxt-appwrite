@@ -1,21 +1,22 @@
 import {
   Client,
   Account,
-  AppwriteException,
   Avatars,
   Databases,
   Functions,
   Graphql,
-  ID,
   Locale,
+  Storage,
+  Teams,
+  Messaging,
+  AppwriteException,
+  Role,
   Permission,
   Query,
-  Role,
-  Storage,
-  Teams
+  ID,
+  type Models
 } from 'appwrite'
-import type{ ModuleOptions } from '../module'
-import { defineNuxtPlugin } from '#imports'
+import { defineNuxtPlugin, useCookie } from '#imports'
 
 export type AppwriteConfig = {
   endpoint: string;
@@ -25,6 +26,10 @@ export type AppwriteConfig = {
 export type Appwrite = {
   config: AppwriteConfig;
   client: Client;
+  session: {
+    set: (sessionSecret: string) => void;
+    unset: () => void;
+  }
 
   account: Account;
   avatars: Avatars;
@@ -34,29 +39,46 @@ export type Appwrite = {
   locale: Locale;
   storage: Storage;
   teams: Teams;
+  messaging: Messaging,
 
+  AppwriteException: typeof AppwriteException;
+  Role: typeof Role;
   Permission: typeof Permission;
   Query: typeof Query;
-  Role: typeof Role;
-  AppwriteException: typeof AppwriteException;
   ID: typeof ID;
 };
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const moduleOptions = nuxtApp.$config.public.appwrite as ModuleOptions
-  const config: AppwriteConfig = {
-    endpoint: moduleOptions.endpoint || 'https://cloud.appwrite.io/v1',
-    project: moduleOptions.project
-  }
+  const config = nuxtApp.$config.public.appwrite
+  const sessionCookie = useCookie<string | null>('appwrite_session', config.cookieSerializeOptions)
   const client = new Client()
-  client.setEndpoint(config.endpoint)
-  client.setProject(config.project)
+    .setEndpoint(config.endpoint)
+    .setProject(config.project)
+  if (sessionCookie.value) client.setSession(sessionCookie.value)
 
   return {
     provide: {
       appwrite: {
         config,
         client,
+        session: {
+          /**
+           * Sets the session secret and serializes it into a cookie.
+           *
+           * @param {Models.Session} session - The session object containing the secret and expiration date.
+           */
+          set: (session: Models.Session) => {
+            sessionCookie.value = session.secret
+            console.log('session.secret:', session.secret)
+            console.log('sessionCookie.value:', sessionCookie.value)
+          },
+          /**
+           * Deletes the session secret cookie.
+           */
+          unset: () => {
+            sessionCookie.value = null
+          }
+        },
 
         account: new Account(client),
         avatars: new Avatars(client),
@@ -66,11 +88,12 @@ export default defineNuxtPlugin((nuxtApp) => {
         locale: new Locale(client),
         storage: new Storage(client),
         teams: new Teams(client),
+        messaging: new Messaging(client),
 
+        AppwriteException,
+        Role,
         Permission,
         Query,
-        Role,
-        AppwriteException,
         ID
       }
     }
