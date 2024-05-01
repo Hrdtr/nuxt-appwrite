@@ -1,28 +1,29 @@
 import { defineNuxtModule, addPlugin, addImportsDir, createResolver, extendViteConfig } from '@nuxt/kit'
+
 export type {
   Models,
   Payload,
   QueryTypes,
   QueryTypesList,
   RealtimeResponseEvent,
-  UploadProgress
+  UploadProgress,
 } from 'appwrite'
 
 export interface ModuleOptions {
-  endpoint: string,
+  endpoint: string
   project: string
 }
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: 'nuxt-appwrite',
-    configKey: 'appwrite'
+    configKey: 'appwrite',
   },
   defaults: {
     endpoint: 'https://cloud.appwrite.io/v1',
-    project: ''
+    project: '',
   },
-  setup (options, nuxt) {
+  setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url)
 
     if (!options.project) throw new Error('`appwrite.project` is required')
@@ -42,5 +43,5 @@ export default defineNuxtModule<ModuleOptions>({
       console.info(`Appwrite Endpoint: ${options.endpoint}`)
       console.info(`Appwrite Project: ${options.project}`)
     })
-  }
+  },
 })
