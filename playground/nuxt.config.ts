@@ -1,9 +1,9 @@
 export default defineNuxtConfig({
   modules: ['../src/module'],
   appwrite: {
-    project: 'nuxt-playground'
+    project: 'nuxt-playground',
   },
   typescript: {
-    shim: false
-  }
+    shim: false,
+  },
 })
