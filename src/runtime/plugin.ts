@@ -12,41 +12,43 @@ import {
   Query,
   Role,
   Storage,
-  Teams
+  Teams,
+  Messaging,
 } from 'appwrite'
-import type{ ModuleOptions } from '../module'
+import type { ModuleOptions } from '../module'
 import { defineNuxtPlugin } from '#imports'
 
 export type AppwriteConfig = {
-  endpoint: string;
-  project: string;
-};
+  endpoint: string
+  project: string
+}
 
 export type Appwrite = {
-  config: AppwriteConfig;
-  client: Client;
+  config: AppwriteConfig
+  client: Client
 
-  account: Account;
-  avatars: Avatars;
-  database: Databases;
-  functions: Functions;
-  graphql: Graphql;
-  locale: Locale;
-  storage: Storage;
-  teams: Teams;
+  account: Account
+  avatars: Avatars
+  database: Databases
+  functions: Functions
+  graphql: Graphql
+  locale: Locale
+  storage: Storage
+  teams: Teams
+  messaging: Messaging
 
-  Permission: typeof Permission;
-  Query: typeof Query;
-  Role: typeof Role;
-  AppwriteException: typeof AppwriteException;
-  ID: typeof ID;
-};
+  Permission: typeof Permission
+  Query: typeof Query
+  Role: typeof Role
+  AppwriteException: typeof AppwriteException
+  ID: typeof ID
+}
 
 export default defineNuxtPlugin((nuxtApp) => {
   const moduleOptions = nuxtApp.$config.public.appwrite as ModuleOptions
   const config: AppwriteConfig = {
     endpoint: moduleOptions.endpoint || 'https://cloud.appwrite.io/v1',
-    project: moduleOptions.project
+    project: moduleOptions.project,
   }
   const client = new Client()
   client.setEndpoint(config.endpoint)
@@ -66,24 +68,25 @@ export default defineNuxtPlugin((nuxtApp) => {
         locale: new Locale(client),
         storage: new Storage(client),
         teams: new Teams(client),
+        messaging: new Messaging(client),
 
         Permission,
         Query,
         Role,
         AppwriteException,
-        ID
-      }
-    }
+        ID,
+      },
+    },
   }
 })
 
 declare module '#app' {
   interface NuxtApp {
-    $appwrite: Appwrite;
+    $appwrite: Appwrite
   }
 }
 declare module '@vue/runtime-core' {
   interface ComponentCustomProperties {
-    $appwrite: Appwrite;
+    $appwrite: Appwrite
   }
 }

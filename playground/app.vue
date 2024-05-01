@@ -9,7 +9,7 @@ const { account } = useAppwrite()
 //   return response
 // })
 
-const user = ref<any>()
+const user = ref<unknown>()
 const getAccount = async () => {
   const response = await account.get()
   user.value = response
@@ -19,7 +19,10 @@ onMounted(getAccount)
 const email = ref('')
 const password = ref('')
 const login = async () => {
-  const res = await account.createEmailSession(email.value, password.value)
+  const res = await account.createEmailPasswordSession(
+    email.value,
+    password.value,
+  )
   await getAccount()
   console.log(res)
 }
@@ -32,12 +35,26 @@ const logout = async () => {
 
 <template>
   <div>
-    <form v-if="!user" @submit.prevent="login">
-      <input v-model="email" placeholder="Email" type="email">
-      <input v-model="password" placeholder="Password" type="password">
+    <form
+      v-if="!user"
+      @submit.prevent="login"
+    >
+      <input
+        v-model="email"
+        placeholder="Email"
+        type="email"
+      >
+      <input
+        v-model="password"
+        placeholder="Password"
+        type="password"
+      >
       <button>Login</button>
     </form>
-    <button v-else @click="logout">
+    <button
+      v-else
+      @click="logout"
+    >
       Logout
     </button>
 
