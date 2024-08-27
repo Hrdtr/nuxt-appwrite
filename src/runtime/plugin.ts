@@ -85,7 +85,7 @@ declare module '#app' {
     $appwrite: Appwrite
   }
 }
-declare module '@vue/runtime-core' {
+declare module 'vue' {
   interface ComponentCustomProperties {
     $appwrite: Appwrite
   }
