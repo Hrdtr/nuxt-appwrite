@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v1.1.1
+
+[compare changes](https://github.com/Hrdtr/nuxt-appwrite/compare/v1.1.0...v1.1.1)
+
+### 🩹 Fixes
+
+- Augment `vue` rather than `@vue/runtime-core` ([50ea330](https://github.com/Hrdtr/nuxt-appwrite/commit/50ea330))
+- Update to latest `@nuxt/module-builder` ([22a03e2](https://github.com/Hrdtr/nuxt-appwrite/commit/22a03e2))
+
+### 🏡 Chore
+
+- Deps update, appwrite sdk v15 ([0c0688a](https://github.com/Hrdtr/nuxt-appwrite/commit/0c0688a))
+
+### ❤️ Contributors
+
+- Herdi Tr. ([@Hrdtr](http://github.com/Hrdtr))
+- Daniel Roe ([@danielroe](http://github.com/danielroe))
+
 ## v1.1.0
 
 [compare changes](https://github.com/Hrdtr/nuxt-appwrite/compare/v1.0.8...v1.1.0)
