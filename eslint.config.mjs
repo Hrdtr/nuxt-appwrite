@@ -10,10 +10,8 @@ export default createConfigForNuxt({
   dirs: {
     src: ['./playground'],
   },
+}).append({
+  rules: {
+    '@typescript-eslint/no-empty-object-type': 'off',
+  },
 })
-  .append({
-    ignores: [
-      'dist',
-      'node_modules',
-    ],
-  })

@@ -15,8 +15,7 @@ import {
   Teams,
   Messaging,
 } from 'appwrite'
-import type { ModuleOptions } from '../module'
-import { defineNuxtPlugin } from '#imports'
+import { defineNuxtPlugin } from '#app'
 
 export type AppwriteConfig = {
   endpoint: string
@@ -45,7 +44,7 @@ export type Appwrite = {
 }
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const moduleOptions = nuxtApp.$config.public.appwrite as ModuleOptions
+  const moduleOptions = nuxtApp.$config.public.appwrite
   const config: AppwriteConfig = {
     endpoint: moduleOptions.endpoint || 'https://cloud.appwrite.io/v1',
     project: moduleOptions.project,
@@ -80,7 +79,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   }
 })
 
-declare module '#app' {
+declare module '#imports' {
   interface NuxtApp {
     $appwrite: Appwrite
   }

@@ -1,7 +1,17 @@
-import { defineNuxtModule, addPlugin, addImportsDir, createResolver, extendViteConfig } from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, addImportsDir, createResolver } from '@nuxt/kit'
+import type { AppwriteConfig } from './runtime/plugin'
 
 export type {
   Models,
+  AuthenticationFactor,
+  AuthenticatorType,
+  Browser,
+  CreditCard,
+  ExecutionMethod,
+  Flag,
+  ImageFormat,
+  ImageGravity,
+  OAuthProvider,
   Payload,
   QueryTypes,
   QueryTypesList,
@@ -9,10 +19,8 @@ export type {
   UploadProgress,
 } from 'appwrite'
 
-export interface ModuleOptions {
-  endpoint: string
-  project: string
-}
+export type { AppwriteConfig }
+export interface ModuleOptions extends AppwriteConfig {}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
@@ -26,15 +34,10 @@ export default defineNuxtModule<ModuleOptions>({
   setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url)
 
-    if (!options.project) throw new Error('`appwrite.project` is required')
+    if (!options.project) {
+      console.error('`appwrite.project` is required')
+    }
     nuxt.options.runtimeConfig.public.appwrite = options
-
-    // Fix esm error with cross-fetch used by appwrite js sdk
-    extendViteConfig((config) => {
-      config.optimizeDeps = config.optimizeDeps || {}
-      config.optimizeDeps.include = config.optimizeDeps.include || []
-      config.optimizeDeps.include.push('cross-fetch')
-    })
 
     addPlugin(resolve('./runtime/plugin'))
     addImportsDir(resolve('./runtime/composables'))
