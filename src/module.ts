@@ -45,6 +45,9 @@ export default defineNuxtModule<ModuleOptions>({
     nuxt.hook('listen', () => {
       console.info(`Appwrite Endpoint: ${options.endpoint}`)
       console.info(`Appwrite Project: ${options.project}`)
+      if(options.locale){
+        console.info(`Appwrite Locale: ${options.locale}`)
+      }
     })
   },
 })

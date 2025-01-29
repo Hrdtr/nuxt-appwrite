@@ -20,6 +20,7 @@ import { defineNuxtPlugin } from '#app'
 export type AppwriteConfig = {
   endpoint: string
   project: string
+  locale?: string
 }
 
 export type Appwrite = {
@@ -48,10 +49,14 @@ export default defineNuxtPlugin((nuxtApp) => {
   const config: AppwriteConfig = {
     endpoint: moduleOptions.endpoint || 'https://cloud.appwrite.io/v1',
     project: moduleOptions.project,
+    locale: moduleOptions.locale,
   }
   const client = new Client()
   client.setEndpoint(config.endpoint)
   client.setProject(config.project)
+  if (config.locale) {
+    client.setLocale(config.locale)
+  }
 
   return {
     provide: {
