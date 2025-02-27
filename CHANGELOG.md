@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v1.2.0
+
+[compare changes](https://github.com/Hrdtr/nuxt-appwrite/compare/v1.1.1...v1.2.0)
+
+### 🚀 Enhancements
+
+- Add locale configuration support for Appwrite client ([902d2db](https://github.com/Hrdtr/nuxt-appwrite/commit/902d2db))
+
+### 📖 Documentation
+
+- Add locale configuration option to README ([384de25](https://github.com/Hrdtr/nuxt-appwrite/commit/384de25))
+
+### 🏡 Chore
+
+- **release:** V1.1.1 ([e156dd7](https://github.com/Hrdtr/nuxt-appwrite/commit/e156dd7))
+- Deps update ([a96302d](https://github.com/Hrdtr/nuxt-appwrite/commit/a96302d))
+
+### 🤖 CI
+
+- Force reinstall corepack on action workflows ([17a23f1](https://github.com/Hrdtr/nuxt-appwrite/commit/17a23f1))
+- Use pnpm setup action ([dd09633](https://github.com/Hrdtr/nuxt-appwrite/commit/dd09633))
+
+### ❤️ Contributors
+
+- Herdi Tr ([@Hrdtr](https://github.com/Hrdtr))
+- Rtrap95 ([@rtrap95](https://github.com/rtrap95))
+- Herdi Tr. ([@Hrdtr](https://github.com/Hrdtr))
+
 ## v1.1.1
 
 [compare changes](https://github.com/Hrdtr/nuxt-appwrite/compare/v1.1.0...v1.1.1)
