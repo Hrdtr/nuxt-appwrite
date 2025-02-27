@@ -37,21 +37,21 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.13.0",
-    "appwrite": "^15.0.0"
+    "@nuxt/kit": "^3.15.4",
+    "appwrite": "^17.0.0"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^0.5.3",
-    "@nuxt/module-builder": "^0.8.3",
-    "@nuxt/schema": "^3.13.0",
-    "@nuxt/test-utils": "^3.14.1",
-    "changelogen": "^0.5.5",
-    "eslint": "^9.9.1",
-    "nuxt": "^3.13.0",
-    "release-it": "^17.6.0",
-    "typescript": "~5.5.4",
-    "vitest": "^2.0.5",
-    "vue-tsc": "^2.0.29"
+    "@nuxt/eslint": "^1.1.0",
+    "@nuxt/module-builder": "^0.8.4",
+    "@nuxt/schema": "^3.15.4",
+    "@nuxt/test-utils": "^3.17.0",
+    "changelogen": "^0.6.0",
+    "eslint": "^9.21.0",
+    "nuxt": "^3.15.4",
+    "release-it": "^18.1.2",
+    "typescript": "~5.7.3",
+    "vitest": "^3.0.7",
+    "vue-tsc": "^2.2.4"
   },
   "packageManager": "pnpm@9.6.0",
   "publishConfig": {

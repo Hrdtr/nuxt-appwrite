@@ -45,7 +45,7 @@ export type Appwrite = {
 }
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const moduleOptions = nuxtApp.$config.public.appwrite
+  const moduleOptions = nuxtApp.$config.public.appwrite as AppwriteConfig
   const config: AppwriteConfig = {
     endpoint: moduleOptions.endpoint || 'https://cloud.appwrite.io/v1',
     project: moduleOptions.project,

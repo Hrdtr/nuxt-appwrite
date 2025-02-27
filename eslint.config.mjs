@@ -13,5 +13,6 @@ export default createConfigForNuxt({
 }).append({
   rules: {
     '@typescript-eslint/no-empty-object-type': 'off',
+    'nuxt/nuxt-config-keys-order': 'off',
   },
 })
