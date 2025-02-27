@@ -50,6 +50,13 @@ Appwrite API endpoint (Console -> Project -> Setting -> API Endpoint)
 
 Appwrite project ID (Console -> Project -> Setting -> Project ID)
 
+### Locale - `locale` - optional
+
+- type: `String`
+- default: `en`
+
+Appwrite locale
+
 ### Full Example
 
 ```js
@@ -60,6 +67,7 @@ export default {
   appwrite: {
     endpoint: 'https://cloud.appwrite.io/v1',
     project: 'nuxt-playground',
+    locale: 'en'
   }
 }
 ```
