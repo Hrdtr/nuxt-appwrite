@@ -12,8 +12,8 @@ importers:
         specifier: ^3.15.4
         version: 3.15.4(magicast@0.3.5)
       appwrite:
-        specifier: ^17.0.0
-        version: 17.0.0
+        specifier: ^22.4.1
+        version: 22.4.1
     devDependencies:
       '@nuxt/eslint':
         specifier: ^1.1.0
@@ -1718,8 +1718,8 @@ packages:
     resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
     engines: {node: '>= 8'}
 
-  appwrite@17.0.0:
-    resolution: {integrity: sha512-R5+jMh6dVsKC5BdcO9G3wQPxqlU048zxj/Hahq2SU86XIxb0jWThQqS7MtyLUg7tz27SrwO2JvpwUrT9SOStDA==}
+  appwrite@22.4.1:
+    resolution: {integrity: sha512-NlEgUvSo7A1m+TEHZ8zlWUIuCDtNg3VN6Mbxd6r+1618CiWokig630FpeKQ9/WD5Io92QxuTV/dVzBLPlQghqg==}
 
   archiver-utils@5.0.2:
     resolution: {integrity: sha512-wuLJMmIBQYCsGZgYLTy5FIB2pF6Lfb6cXMSF8Qywwk3t20zWnAi7zLcQFdKQmIB8wyZpY5ER38x08GbwtR2cLA==}
@@ -1789,6 +1789,9 @@ packages:
 
   before-after-hook@3.0.2:
     resolution: {integrity: sha512-Nik3Sc0ncrMK4UUdXQmAnRtzmNQTAAXmXIopizwZ1W1t8QmfJj+zL4OA2I7XPTPW5z5TDqv4hRo/JzouDJnX3A==}
+
+  bignumber.js@9.3.1:
+    resolution: {integrity: sha512-Ko0uX15oIUS7wJ3Rb30Fs6SkVbLmPBAKdlm7q9+ak9bbIeFf0MwuBsQV6z7+X768/cHsfg+WlysDWJcmthjsjQ==}
 
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
@@ -3061,6 +3064,9 @@ packages:
     resolution: {integrity: sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==}
     engines: {node: '>=6'}
     hasBin: true
+
+  json-bigint@1.0.0:
+    resolution: {integrity: sha512-SiPv/8VpZuWbvLSMtTDU8hEfrZWg/mH/nV/b4o0CYbSxu1UIQPLdwKOCIyLQX+VIPO5vrLX3i8qtqFyhdPSUSQ==}
 
   json-buffer@3.0.1:
     resolution: {integrity: sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ==}
@@ -6829,7 +6835,9 @@ snapshots:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
-  appwrite@17.0.0: {}
+  appwrite@22.4.1:
+    dependencies:
+      json-bigint: 1.0.0
 
   archiver-utils@5.0.2:
     dependencies:
@@ -6906,6 +6914,8 @@ snapshots:
   basic-ftp@5.0.5: {}
 
   before-after-hook@3.0.2: {}
+
+  bignumber.js@9.3.1: {}
 
   binary-extensions@2.3.0: {}
 
@@ -8301,6 +8311,10 @@ snapshots:
   jsesc@3.0.2: {}
 
   jsesc@3.1.0: {}
+
+  json-bigint@1.0.0:
+    dependencies:
+      bignumber.js: 9.3.1
 
   json-buffer@3.0.1: {}
 
