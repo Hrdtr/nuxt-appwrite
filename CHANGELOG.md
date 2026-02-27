@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v1.2.1
+
+[compare changes](https://github.com/Hrdtr/nuxt-appwrite/compare/v1.2.0...v1.2.1)
+
+### 🩹 Fixes
+
+- Appwrite sdk v22 ([bec2a0a](https://github.com/Hrdtr/nuxt-appwrite/commit/bec2a0a))
+
+### ❤️ Contributors
+
+- Herdi Tr. ([@Hrdtr](https://github.com/Hrdtr))
+
 ## v1.2.0
 
 [compare changes](https://github.com/Hrdtr/nuxt-appwrite/compare/v1.1.1...v1.2.0)
